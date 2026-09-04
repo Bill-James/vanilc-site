@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Churrasqueira VanilC — Fast Food &amp; Take Away, Alvalade</title>
+<meta name="description" content="Churrasqueira VanilC em Alvalade, Luanda. Churrasco, tábuas grelhadas e fast food. Aberto todos os dias das 07:00 às 00:00. Peça pelo WhatsApp.">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#topo" class="brand">
+      <img src="assets/logo.jpg" alt="Logótipo Churrasqueira VanilC" class="brand-logo">
+      <span class="brand-name">Vanil<span class="brand-accent">C</span></span>
+    </a>
+    <nav class="main-nav">
+      <a href="#cardapio">Cardápio</a>
+      <a href="#localizacao">Localização</a>
+      <a href="https://wa.me/244925004040" target="_blank" rel="noopener">WhatsApp</a>
+    </nav>
+    <button class="cart-btn" id="cartToggle" aria-label="Abrir carrinho">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1.4"/><circle cx="18" cy="21" r="1.4"/><path d="M2 3h2l2.4 12.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 2-1.6L21 7H6"/></svg>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </div>
+</header>
+
+<main id="topo">
+
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-kicker">Churrasqueira · Fast Food · Take Away</p>
+      <h1 class="hero-title">Fogo, fumo<br>e sabor de verdade<br>no coração do Alvalade.</h1>
+      <p class="hero-sub">Grelhados na hora, tábuas para partilhar e os clássicos do fast food — todos os dias, das 07:00 à meia-noite.</p>
+      <div class="hero-actions">
+        <a href="#cardapio" class="btn btn-primary">Ver cardápio</a>
+        <a href="https://wa.me/244925004040" target="_blank" rel="noopener" class="btn btn-ghost">Chamar no WhatsApp</a>
+      </div>
+      <div class="hero-meta">
+        <div class="meta-item">
+          <span class="meta-label">Horário</span>
+          <span class="meta-value">07:00 — 00:00, Seg a Dom</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Morada</span>
+          <span class="meta-value">Rua Emílio Mbinde, Alvalade — Luanda</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Contacto</span>
+          <span class="meta-value">925 004 040</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu-section" id="cardapio">
+    <div class="section-inner">
+      <div class="menu-heading">
+        <h2>O Cardápio</h2>
+        <p class="menu-note">Os preços podem variar diariamente conforme o mercado.</p>
+      </div>
+
+      <div class="menu-tabs" id="menuTabs" role="tablist"></div>
+      <div class="menu-grid" id="menuGrid"></div>
+    </div>
+  </section>
+
+  <section class="location-section" id="localizacao">
+    <div class="section-inner location-inner">
+      <div class="location-text">
+        <h2>Onde estamos</h2>
+        <p>Rua Emílio Mbinde, Alvalade — mesmo atrás do Hotel Alvalade, Luanda.</p>
+        <ul class="location-facts">
+          <li><strong>Horário:</strong> 07:00 às 00:00, todos os dias</li>
+          <li><strong>Contacto:</strong> <a href="tel:+244925004040">925 004 040</a></li>
+          <li><strong>Encomendas:</strong> <a href="https://wa.me/244925004040" target="_blank" rel="noopener">via WhatsApp</a></li>
+        </ul>
+      </div>
+      <div class="location-map">
+        <iframe
+          title="Mapa da Churrasqueira VanilC"
+          src="https://www.google.com/maps?q=Rua+Em%C3%ADlio+Mbinde,+Alvalade,+Luanda,+Angola&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="assets/logo.jpg" alt="Logótipo Churrasqueira VanilC" class="footer-logo">
+      <p>Churrasqueira VanilC — Fast Food &amp; Take Away</p>
+    </div>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/vanilc_takeaway/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://wa.me/244925004040" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</footer>
+
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+  <div class="cart-header">
+    <h3>O seu pedido</h3>
+    <button id="cartClose" aria-label="Fechar carrinho">&times;</button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <p class="cart-empty" id="cartEmpty">O carrinho está vazio. Adicione uns grelhados 🔥</p>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total-row">
+      <span>Total</span>
+      <span id="cartTotal">0 Kz</span>
+    </div>
+    <button class="btn btn-primary btn-block" id="checkoutBtn">Finalizar pedido via WhatsApp</button>
+  </div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>
